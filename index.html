@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trận Bạch Đằng 938 - Diễn Biến & Hình Ảnh</title>
+    <style>
+        body {
+            background: #e9ecef;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #d32f2f;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Hiệu ứng giấy note */
+        .sticky-note {
+            background: #fff9c4;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            position: relative;
+            transform: rotate(-1deg);
+            border-left: 5px solid #fbc02d;
+            transition: transform 0.3s ease; /* Thêm hiệu ứng khi hover */
+        }
+
+        .sticky-note:nth-child(even) {
+            background: #e1f5fe;
+            transform: rotate(1.5deg);
+            border-left: 5px solid #03a9f4;
+        }
+
+        .sticky-note:nth-child(3n) {
+            background: #fce4ec;
+            transform: rotate(-0.5deg);
+            border-left: 5px solid #f06292;
+        }
+
+        .sticky-note:hover {
+            transform: rotate(0deg) scale(1.02); /* Làm phẳng và phóng to nhẹ khi hover */
+            z-index: 10; /* Đưa lên trên các note khác */
+        }
+
+        .sticky-note h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 2px dashed rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+            color: #1a237e;
+        }
+
+        .sticky-note blockquote {
+            font-style: italic;
+            background: rgba(255,255,255,0.5);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 0.95rem;
+        }
+
+        /* Định dạng ảnh trong giấy note */
+        .illustration-img {
+            width: 100%;       /* Ảnh tự động vừa chiều ngang giấy note */
+            height: 180px;      /* Chiều cao cố định cho đều các note */
+            object-fit: cover;  /* Giúp ảnh không bị méo khi co giãn */
+            border-radius: 8px; /* Bo góc ảnh cho xinh */
+            margin: 15px 0;
+            border: 2px solid rgba(0,0,0,0.1);
+        }
+
+        /* Phần video siêu nổi bật */
+        .video-box {
+            grid-column: 1 / -1;
+            background: #1a237e;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 50px;
+            box-shadow: 0 15px 30px rgba(26, 35, 126, 0.4);
+        }
+
+        .video-link {
+            display: inline-block;
+            background: #ff1744;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: all 0.3s;
+            animation: pulse 1.5s infinite; /* Thêm hiệu ứng pulse mới */
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 23, 68, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 23, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 23, 68, 0); }
+        }
+
+        .video-link:hover {
+            background: #d50000;
+        }
+
+        .serious-footer {
+            grid-column: 1 / -1;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 5px solid #d32f2f;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🌊 ĐẠI THẮNG BẠCH ĐẰNG 938 🌊</h1>
+        <p><i>Kế sách thiên tài - Giang sơn tự chủ</i></p>
+    </div>
+
+    <div class="container">
+        <div class="sticky-note">
+            <h2>1. Bối cảnh lịch sử</h2>
+            <p>Năm 931, <b>Dương Đình Nghệ</b> đánh đuổi quân Nam Hán, giành quyền tự chủ, xưng là Tiết độ sứ.</p>
+            <p>Cuối năm 937, nha tướng <b>Kiều Công Tiễn</b> giết Đình Nghệ cướp ngôi. Con rể Đình Nghệ là <b>Ngô Quyền</b> tập hợp lực lượng đánh Công Tiễn.</p>
+            <p>Công Tiễn sợ hãi cầu cứu Nam Hán. Vua Nam Hán Lưu Cung sai con là <b>Lưu Hoằng Tháo</b> thống lĩnh 2 vạn thủy quân sang xâm lược.</p>
+            <img src="https://vietjack.com/lich-su-6-ket-noi/images/cau-hoi-6-trang-85-lich-su-lop-6-ket-noi-tri-thuc-2.png" alt="Lược đồ di quân trận Bạch Đằng 938" class="illustration-img">
+        </div>
+
+        <div class="sticky-note">
+            <h2>2. Diễn biến trận đánh</h2>
+            <p> <p>  Trong bối cảnh Kiều Công Tiễn đang đối mặt với nguy cơ bị đánh tan, vua Nam Hán đã phong con trai của ông, Hoàng Cảo, làm Tĩnh Hải quân và đổi tên là Giao Vương để dẫn quân tới cứu ông.
+            <p>Trận Bạch Đằng, một trận đánh quyết định lịch sử của dân tộc Việt Nam, diễn ra vào một ngày cuối đông năm 938 trên sông Bạch Đằng ở cửa biển và hạ lưu. Đoàn chiến thuyền do Hoàng Cao chỉ huy vừa vượt biển tiến vào cửa ngõ Bạch Đằng thì nước triều bắt đầu xuống. Tuy nhiên, lúc này, đội hình quân giặc đã lọt vào trận địa mai phục của quân ta, khiến cho tình hình chiến đấu trở nên khó khăn hơn bao giờ hết.
+
+<p></p>Tuy nhiên, nhờ sự kiên nhẫn và tài chiến lược của Ngô Quyền, quân ta đã tiến hành một cuộc tấn công bất ngờ và mãnh liệt. Các thuyền chiến nhỏ nhẹ, cơ động và "nhanh như gió" của quân ta lao thẳng vào đội hình thuyền chiến của giặc, khiến cho chúng không kịp chống đỡ và bị rối loạn, lúng túng. Các cánh quân của Dương Tam Kha, Đỗ Cảnh Thạc, Ngô Xương Ngập, Nguyễn Tất Tố cùng các lực lượng dân binh đã cùng nhau tiếng công quân giặc, khiến cho đội binh thuyền của Hoàng Thao nằm gọn trong vòng vây của quân ta. Chúng bị đánh chặn quyết liệt phía trước, bị liên tiếp tấn công từ hai bên cạnh sườn. Toàn bộ các lực lượng thủy bộ đã phối hợp chặt chẽ cùng tiến công tiêu diệt các thuyền chiến của địch.
+
+<p></p>Bị tấn công bất ngờ, quân giặc cố tìm cách chống đỡ, nhưng dường như bất lực trước sức tiến công mãnh liệt của quân ta. Tổ chức chống đỡ yếu ớt của chúng định tìm đường rút chạy ra biển, nhưng không kịp, chúng đã sa vào bãi cọc ngầm mà Ngô Quyền đã chủ trương bố trí những cọc gỗ bịt sắt nhọn đóng ngầm dưới nước để cản phá thuyền giặc khi nước triều xuống.
+
+<p></p>Nhận thấy quân giặc đã mắc lừa, Ngô Quyền hạ lệnh cho quân ta giả bộ chạy ngược dòng chờ thủy triều xuống để thực hiện kế hoạch tấn công. Quả nhiên, thuyền lớn của quân Nam Hán mắc cạn khi thủy triều xuống và lần lượt bị đâm thủng gần hết cọc. Khi ấy tướng quân Ngô Quyền mới mở cuộc tấn công ồ ạt khiến quân Nam Hán không kịp trở tay, chỉ có thể tháo chạy.
+
+<p></p>Bị cọc chặn, bị quân ta đánh, thuyền địch không sao thoát ra biển được. Toàn bộ chiến thuyền của giặc bị đánh chìm, hầu hết quân giặc bị tiêu diệt.</p>
+          <p>Chính <b>Ngô Quyền</b> đã cho quân lính của mình đóng cọc bằng sắt nhọn xuống đáy sông Bạch Đằng. Khi triều cường, bãi cọc này sẽ bị che lấp hoàn toàn. Vì vậy, Ngô Quyền đã nghĩ ra kế dụ địch vào vùng này khi thủy triều lên. Sau đó, đợi khi thủy triều xuống, tàu địch mắc cạn rồi mới xuất trận. Kế hoạch này của tướng quân Ngô Quyền nhận được sự đồng tình của triều đình cũng như binh lính nên được tiến hành nhanh chóng và kín đáo.
+            <p>Đợi khi <b>thủy triều xuống</b>, ông hạ lệnh tổng tấn công. Thuyền chiến lớn của địch mắc cạn, bị cọc nhọn đâm thủng gần hết. Hoằng Tháo tử trận tại chỗ.</p>
+            <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2018/9/29/633449/18-Coc_Bach_Dang.jpg" alt="Di tích bãi cọc Bạch Đằng" class="illustration-img">
+        </div>
+
+        <div class="sticky-note">
+            <h2>3. Vì sao ta thắng?</h2>
+            <p>Sử gia Lê Văn Hưu nhận xét: <i>"Mưu giỏi mà đánh cũng giỏi"</i>. Hai yếu tố quyết định:</p>
+            <ul>
+                <li>Dụ địch đúng bãi cọc khi triều còn cao để bẫy không bị lộ.</li>
+                <li>Nắm vững quy luật thủy triều từng giờ để khi triều rút, thuyền địch "dính bẫy" ngay lập tức.</li>
+            </ul>
+            <p>Nếu tính toán sai một chút, bãi cọc sẽ vô tác dụng hoặc phản tác dụng.</p>
+            <img src="data:image/jpeg;base64,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"> 
+        </div>
+
+        <div class="sticky-note">
+            <h2>4. Ý nghĩa vĩ đại</h2>
+            <p>Kết thúc <b>1117 năm</b> Bắc thuộc (179 TCN - 938). Mở ra kỷ nguyên độc lập tự chủ lâu dài.</p>
+            <p>Đập tan mưu đồ đồng hóa của các đế chế phương Đông hùng mạnh. Ngô Quyền được xưng tụng là vị "vua của các vua", là "vị Tổ Trung hưng" của dân tộc.</p>
+            <img src="https://res.klook.com/image/upload/v1733476163/f3v5scevcal1e9ywrql8.jpg" alt="Di tích thành Cổ Loa" class="illustration-img">
+        </div>
+
+        <div class="sticky-note">
+            <h2>5. Nhận định của tiền nhân và hậu thế</h2>
+            <blockquote>
+                "Tiền Ngô Vương có thể lấy quân mới họp của nước Việt ta mà đánh tan được trăm vạn quân... nối lại quốc thống." - <b>Ngô Sĩ Liên</b>
+            </blockquote>
+            <blockquote>
+                "Nước Nam ta mới cởi được ách Bắc thuộc hơn một nghìn năm... mở đường cho Đinh, Lê, Lý, Trần." - <b>Trần Trọng Kim</b>
+            </blockquote>
+            
+            <p>  Người đời sau tôn vinh <b>Ngô Quyền</b> là người <b>"người mở nền"</b> cho dân tộc.
+           
+            </div>
+
+        <div class="serious-footer">
+            <h3>📜 Lời kết</h3>
+               <p>Trận Bạch Đằng 938 là cột mốc vàng chói lọi. Sau chiến thắng, Việt Nam bước vào kỷ nguyên văn minh Đại Việt rực rỡ. Đây là bài học về sự sáng tạo, lòng quả cảm và tinh thần dân tộc bất khuất mà chúng ta mãi mãi tự hào.</p>
+        </div>
+
+        <div class="video-box">
+            <h2>🎬 KHÔNG THỂ BỎ QUA! 🎬</h2>
+            <p>Tái hiện toàn cảnh trận đánh với kỹ xảo cực đỉnh tại đây:</p>
+            <a href="https://youtu.be/ZPIUuLtRUFY?si=492QkJsDQLcchZgg" target="_blank" class="video-link">
+                XEM TRẬN BẠCH ĐẰNG NGAY ▶
+            </a>
+            <p style="margin-top: 15px; font-size: 0.9rem;">(Nguồn: YouTube - https://youtu.be/ZPIUuLtRUFY)</p>
+        </div>
+    </div>
+
+</body>
+</html>
